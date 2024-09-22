@@ -1,4 +1,5 @@
 ![image](https://user-images.githubusercontent.com/5889006/190859441-141b5f81-8483-40d2-bd96-ebf85616a46d.png)
+> 为方便修改主题,  github.com/CaiJimmy 替换成 github.com/shaoyaoqian。
 
 # Hugo Theme Stack
 
@@ -8,7 +9,7 @@ Card-style Hugo theme designed for bloggers.
 
 ## Quickstart
 
-Use this template: [CaiJimmy/hugo-theme-stack-starter](https://github.com/CaiJimmy/hugo-theme-stack-starter)
+Use this template: [CaiJimmy/hugo-theme-stack-starter](https://github.com/shaoyaoqian/hugo-theme-stack-starter)
 
 ## Demo
 
