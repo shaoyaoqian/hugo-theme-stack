@@ -1,0 +1,19 @@
+
+<link href='{{ $.Site.Params.comments.artalk.css }}' rel="stylesheet" />
+<script src='{{ $.Site.Params.comments.artalk.js }}'></script>
+
+
+<!-- Artalk -->
+<div id="Comments"></div>
+
+
+<script>
+  Artalk.init({
+    el: '#Comments',
+    pageKey: '{{ .Permalink }}',
+    pageTitle: '{{ .Title }}',
+    server: '{{ $.Site.Params.comments.artalk.server }}',
+    site: '{{ $.Site.Params.comments.artalk.site }}',
+    // ...你的其他配置
+  })
+</script>
