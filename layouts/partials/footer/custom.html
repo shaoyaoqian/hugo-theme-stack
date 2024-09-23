@@ -2,13 +2,15 @@
 
 
 
-<script type="text/javascript" src="https://cdn.staticfile.org/Chart.js/4.3.0/chart.umd.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.net/Chart.js/4.3.0/chart.umd.min.js" defer></script>
 <script>
 
 
     function tryCreateChart(ctx, config, retries = 5, delay = 1000) {
         if (typeof Chart !== 'undefined') {
             // Chart 存在，创建实例
+Chart.defaults.font.family = 'LXGW WenKai';
+
             new Chart(ctx, config);
         } else if (retries > 0) {
             // Chart 不存在，延迟后重试
