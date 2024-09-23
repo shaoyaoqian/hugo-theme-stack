@@ -1,0 +1,16 @@
+
+<link rel="stylesheet" href="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.css">
+<div id="aplayer"></div>
+<script src="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.js"></script>
+
+<script>
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        audio: [{
+            name: 'Lullaby',
+            artist: 'Enzalla',
+            url: '/music/enzalla-lullaby.mp3',
+            cover: '/music/enzalla-lullaby.jpg'
+        }]
+    });
+</script>
