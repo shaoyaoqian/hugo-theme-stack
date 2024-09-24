@@ -10,12 +10,15 @@
 </div>
 
 <script>
-  Artalk.init({
+  const artalk = Artalk.init({
     el: '#Comments',
     pageKey: '{{ .Permalink }}',
     pageTitle: '{{ .Title }}',
     server: '{{ $.Site.Params.comments.artalk.server }}',
     site: '{{ $.Site.Params.comments.artalk.site }}',
+    darkMode: 'auto', 
     // ...你的其他配置
   })
+  // artalk.setDarkMode(true)
+
 </script>
