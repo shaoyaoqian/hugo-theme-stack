@@ -1,6 +1,5 @@
 
 <link href='{{ $.Site.Params.comments.artalk.css }}' rel="stylesheet" />
-<script src='{{ $.Site.Params.comments.artalk.js }}'></script>
 
 
 <!-- Artalk -->
@@ -9,16 +8,3 @@
   访问次数 ：<span id="ArtalkPV">加载中...</span>
 </div>
 
-<script>
-  const artalk = Artalk.init({
-    el: '#Comments',
-    pageKey: '{{ .Permalink }}',
-    pageTitle: '{{ .Title }}',
-    server: '{{ $.Site.Params.comments.artalk.server }}',
-    site: '{{ $.Site.Params.comments.artalk.site }}',
-    darkMode: 'auto', 
-    // ...你的其他配置
-  })
-  // artalk.setDarkMode(true)
-
-</script>

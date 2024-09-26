@@ -1,5 +1,33 @@
 
+<script src="https://cdn.staticfile.net/aplayer/1.10.1/APlayer.min.js"></script>
 
+<script>
+    const ap = new APlayer({
+        container: document.getElementById('aplayer'),
+        audio: [{
+            name: 'Lullaby',
+            artist: 'Enzalla',
+            url: '/music/enzalla-lullaby.mp3',
+            cover: '/music/enzalla-lullaby.jpg'
+        }]
+    });
+</script>
+
+<script src='{{ $.Site.Params.comments.artalk.js }}'></script>
+
+<script>
+  const artalk = Artalk.init({
+    el: '#Comments',
+    pageKey: '{{ .Permalink }}',
+    pageTitle: '{{ .Title }}',
+    server: '{{ $.Site.Params.comments.artalk.server }}',
+    site: '{{ $.Site.Params.comments.artalk.site }}',
+    darkMode: 'auto', 
+    // ...你的其他配置
+  })
+  // artalk.setDarkMode(true)
+
+</script>
 
 
 <script type="text/javascript" src="https://cdn.staticfile.net/Chart.js/4.3.0/chart.umd.min.js" defer></script>
@@ -9,8 +37,7 @@
     function tryCreateChart(ctx, config, retries = 5, delay = 1000) {
         if (typeof Chart !== 'undefined') {
             // Chart 存在，创建实例
-Chart.defaults.font.family = 'LXGW WenKai';
-
+            Chart.defaults.font.family = 'LXGW WenKai';
             new Chart(ctx, config);
         } else if (retries > 0) {
             // Chart 不存在，延迟后重试
